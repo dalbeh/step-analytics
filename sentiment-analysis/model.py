@@ -77,7 +77,7 @@ def train_model(dataset):
     model.fit(x_train, y_train)
     model.vectorizer = vectorizer
     return model
-
+ 
 def test_model(model, dataset):
     """ Test the given model (confusion matrix) """
     print("testing the model...")
