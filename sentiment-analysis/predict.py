@@ -30,14 +30,10 @@ def predict(model, text):
     y_predicted = model.predict_proba(x_vector)#model.predict_proba(x_vector)
     return y_predicted[:,1][0]#CLASSES.get(y_predicted[0])
 
-def main(argv):
+# def main(argv):
+def main(text):
     """ Predict the sentiment of the given text """
-    text = argv[1]
+    # text = argv[1]
     model_filename = "data/model.dat.gz"
     model = load_model(model_filename)
-    print(predict(model, text))
-
-
-if __name__ == '__main__':
-    main(sys.argv)
-
+    return predict(model, text)
