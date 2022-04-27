@@ -1,5 +1,8 @@
 numpy
 scipy
 scikit-learn
+sklearn
 pandas
 requests
+fastapi
+uvicorn
