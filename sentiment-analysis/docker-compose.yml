@@ -2,7 +2,10 @@ version: "3.8"
 
 services:
   app:
-    image: dalbeh/python_sentiment_analysis
-    #build: .
+    # image: dalbeh/python_sentiment_analysis
+    build: .
     volumes:
       - .:/app
+    ports:
+      - 8000:8000
+    command: uvicorn main:app --proxy-headers --host 0.0.0.0 --port 8000
