@@ -9,7 +9,7 @@ OUTPUT_FILE="zip/$FILENAME"
 
 # echo "Installing Dependencies"
 # pip3 install -r ./code/requirements.txt -t ./code
-
+mkdir zip
 
 echo "Zipping Files"
 cd code
