@@ -41,4 +41,5 @@ echo "Cleaning"
 rm -rf $TMP_FOLDER
 rm -rf $OUTPUT_FOLDER
 
+
 echo "Done"
