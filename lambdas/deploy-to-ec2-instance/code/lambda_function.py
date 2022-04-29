@@ -19,7 +19,6 @@ def lambda_handler(event, context):
     instance = ec2.Instance(instance_id['SecretString'])
 
 
-    # Print few details of the instance
     print("----------------------------------------------------")
     print("Instance id - ", instance.id)
     print("Instance public IP - ", instance.public_ip_address)
@@ -38,7 +37,7 @@ def lambda_handler(event, context):
         instance.public_dns_name, username='ec2-user', pkey=privkey
     )
     stdin, stdout, stderr = ssh.exec_command(
-        'cd / && sudo rm -r app/sentiment-analysis && sudo aws s3 cp s3://deploy-code-sentiment-analysis/ /app/sentiment-analysis --recursive')
+        'cd / && sudo aws s3 cp s3://deploy-code-sentiment-analysis/ /app/sentiment-analysis --recursive')
     stdin.flush()
     data = stdout.read().splitlines()
     for line in data:
