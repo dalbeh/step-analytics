@@ -28,7 +28,7 @@ jobs:
       run: cd ./lambdas/deploy-to-ec2-instance && zip -r lambda-deploy-ec2-instance.zip ./* 
     
     - name: Deploy lambda code to S3 bucket
-      run: aws s3 cp lambda-deploy-ec2-instance.zip s3://lambdas-python-source-code
+      run: aws s3 cp ./lambdas/deploy-to-ec2-instance/lambda-deploy-ec2-instance.zip s3://lambdas-python-source-code
     
     - name: Update lambda
       run: aws lambda update-function-code --function-name deploy-to-ec2-instance --region us-east-1 --s3-bucket lambdas-python-source-code --s3-key lambda-deploy-ec2-instance.zip
