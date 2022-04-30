@@ -39,7 +39,7 @@ def lambda_handler(event, context):
     stdin, stdout, stderr = ssh.exec_command(
         'cd / && sudo aws s3 cp s3://deploy-code-sentiment-analysis/ /app/sentiment-analysis --recursive')
     stdin.flush()
-    data = stdout.read().splitlines()
+    data = stdout.read().splitlines() 
     for line in data:
         print(line) 
      
