@@ -25,10 +25,10 @@ jobs:
       run: mkdir -p ./artifacts/${{ github.repository }}
 
     - name: Zip Folder
-      run: zip -r ./artifacts/${{ github.repository }}/lambda-deploy-ec2-instance.zip ./* #zip -r release.zip . -x ".git/*" ".github/*"
+      run: zip -r ./artifacts/lambda-deploy-ec2-instance.zip ./* #zip -r release.zip . -x ".git/*" ".github/*"
     
     - name: Deploy lambda code to S3 bucket
-      run: aws s3 sync './artifacts/lambda-deploy-ec2-instance.zip' s3://lambdas-python-source-code --delete
+      run: aws s3 sync ./artifacts/lambda-deploy-ec2-instance.zip s3://lambdas-python-source-code --delete
     
     - name: Update lambda
       run: aws lambda update-function-code --function-name deploy-to-ec2-instance --region us-east-1 --s3-bucket lambdas-python-source-code --s3-key lambda-deploy-ec2-instance.zip
