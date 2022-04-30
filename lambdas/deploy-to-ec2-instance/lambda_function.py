@@ -42,5 +42,5 @@ def lambda_handler(event, context):
     data = stdout.read().splitlines()
     for line in data:
         print(line)
- 
+   
     ssh.close()  
