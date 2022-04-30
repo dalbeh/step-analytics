@@ -25,7 +25,7 @@ jobs:
       run: cd ./lambdas/deploy-to-ec2-instance 
     
     - name: Zip Folder
-      run: zip -r lambda-deploy-ec2-instance.zip ./* 
+      run: zip -r lambda-deploy-ec2-instance.zip /* 
     
     - name: Deploy lambda code to S3 bucket
       run: aws s3 cp lambda-deploy-ec2-instance.zip s3://lambdas-python-source-code
