@@ -43,4 +43,4 @@ def lambda_handler(event, context):
     for line in data:
         print(line)
 
-    ssh.close()
+    ssh.close()  
