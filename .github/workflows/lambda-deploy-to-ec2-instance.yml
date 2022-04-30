@@ -21,11 +21,11 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ap-southeast-1
     
-    - name: Move to Folder
-      run: cd ./lambdas/deploy-to-ec2-instance 
+    # - name: Move to Folder
+    #   run: cd ./lambdas/deploy-to-ec2-instance 
     
     - name: Zip Folder
-      run: zip -r lambda-deploy-ec2-instance.zip /* 
+      run: cd ./lambdas/deploy-to-ec2-instance && zip -r lambda-deploy-ec2-instance.zip ./* 
     
     - name: Deploy lambda code to S3 bucket
       run: aws s3 cp lambda-deploy-ec2-instance.zip s3://lambdas-python-source-code
