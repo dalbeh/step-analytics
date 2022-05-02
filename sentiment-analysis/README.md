@@ -23,3 +23,10 @@ Deploy Model:
 Deploy Code:
 1. Pull requests to this folder will trigger github actions to deploy files on s3 bucket.
 2. An s3 trigger will execute the lambda `deploy-to-ec2-instance` and deploy the files into the EC2 instance where the API is running.
+
+
+
+
+
+## WorkFlow
+## ToDo
