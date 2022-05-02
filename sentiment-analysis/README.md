@@ -1,3 +1,12 @@
+# Sentiment-Analysis API
+### Resume
+
+This model is running as a API at `http://3.130.255.15:8000/sentiment/$(word)`
+
+I used Python FastAPI to create the endpoint and uvicorn to host the app into a docker container over an EC2 Instance on AWS.
+
+### How-To: Technical Information
+
 Deploy Model:
 1. Run docker compose to up container with all dependencies
 2. Run model.py to create the model
