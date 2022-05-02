@@ -1,5 +1,5 @@
 # Sentiment-Analysis API
-### Resume
+## Resume
 
 I used Python FastAPI to create the endpoint and uvicorn to host the app into a docker container over an EC2 Instance on AWS.
 
@@ -11,7 +11,9 @@ And it's based on the following repository
 
 
 
-### How-To: Technical Information
+
+
+## How-To: Technical Information
 
 Deploy Model:
 1. Run docker compose to build/up container with all dependencies
