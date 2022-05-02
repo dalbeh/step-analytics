@@ -4,7 +4,9 @@
 This project was made only for academic propouses. I selected my favourite crypto project to analize Telegram data and Token data (price, market cap, holders, app inprovements, etc) to create an ETL and Dashboard with Python and AWS (Free Tier).
 
 The technical stack is:
+
 Languages: Python (Pandas, Dash, Paramiko), Bash, SQL.
+
 Servicies: EC2 (AmazonLinux), Lambda, PostgreSQL.
 
 ## About the project 
