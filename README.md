@@ -9,6 +9,8 @@ Languages: Python (Pandas, Dash, Paramiko, FastAPI), Bash, SQL.
 
 Servicies: EC2 (AmazonLinux), Lambda, PostgreSQL, Airflow.
 
+CI/CD: Github Actions
+
 ## About the project 
 
 Step is an tracking fitness activity app how pays the users with BNB for the steps they do. The main token is $STEP and works on Binance Smart Chain.
