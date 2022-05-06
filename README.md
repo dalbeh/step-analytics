@@ -5,9 +5,9 @@ This project was made only for academic propouses. I selected my favourite crypt
 
 The technical stack is:
 
-Languages: Python (Pandas, Dash, Paramiko), Bash, SQL.
+Languages: Python (Pandas, Dash, Paramiko, FastAPI), Bash, SQL.
 
-Servicies: EC2 (AmazonLinux), Lambda, PostgreSQL.
+Servicies: EC2 (AmazonLinux), Lambda, PostgreSQL, Airflow.
 
 ## About the project 
 
