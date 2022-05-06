@@ -14,7 +14,7 @@ Servicies: EC2 (AmazonLinux), Lambda, PostgreSQL, Airflow.
 Step is an tracking fitness activity app how pays the users with BNB for the steps they do. The main token is $STEP and works on Binance Smart Chain.
 
 Official Website
-`https://www.walkwithstep.io`
+(https://www.walkwithstep.io`)
 
 ## Dashboard
 
