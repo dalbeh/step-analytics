@@ -131,3 +131,13 @@ dmypy.json
 
 # Model data Files
 sentiment-analysis/data
+
+# Telegram Session
+*.session
+*.session-journal
+
+# CSV Files
+*.csv
+
+# Parquet Files
+*.parquet
