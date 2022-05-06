@@ -1,7 +1,7 @@
 # Step Analytics Project
 ## Resume
 
-This project was made only for academic propouses. I selected my favourite crypto project to analize Telegram data and Token data (price, market cap, holders, app inprovements, etc) to create an ETL and Dashboard with Python and AWS (Free Tier).
+This project was made only for academic propouses. I selected my favourite crypto project to analize Telegram data (users, messages, sentiment) and Token data (price, market cap, holders, app inprovements, etc) to create an ETL and Dashboard with Python and AWS (Free Tier).
 
 The technical stack is:
 
