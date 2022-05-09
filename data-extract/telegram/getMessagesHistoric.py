@@ -1,5 +1,5 @@
 import httpimport
-with httpimport.github_repo('dalbeh', 'telegram-telethon', branch = 'main'):
+with httpimport.github_repo('dalbeh', 'telegram-telethon', 'telegramTelethon', branch='main'):
     import telegramTelethon
 import asyncio
 
@@ -12,4 +12,4 @@ group = 'https://t.me/WalkWithStepTelegram'
 
 
 # Get Messages Historic
-loop.run_until_complete(telegramClient.getMessagesFromDays(client, group, 100, '01/01/22','03/05/22'))
+loop.run_until_complete(telegramClient.getMessagesFromDays(client, group, 100, '25/12/21','08/05/22'))

@@ -1,5 +1,5 @@
 import httpimport
-with httpimport.github_repo('dalbeh', 'telegram-telethon', branch = 'main'):
+with httpimport.github_repo('dalbeh', 'telegram-telethon', 'telegramTelethon', branch='main'):
     import telegramTelethon
 import asyncio
 
