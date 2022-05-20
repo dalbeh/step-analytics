@@ -7,7 +7,7 @@ The technical stack is:
 
 Languages: `Python (Pandas, Dash, Paramiko, FastAPI), Bash, SQL`
 
-Servicies: `EC2 (AmazonLinux), Lambda, PostgreSQL, Airflow`
+Servicies: `EC2 (AmazonLinux), Lambda, PostgreSQL`
 
 CI/CD: `Github Actions`
 
